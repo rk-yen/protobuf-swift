@@ -1,7 +1,6 @@
 MAINTAINERCLEANFILES = \
 	Makefile.in
 bin_PROGRAMS = protoc-gen-swift
-protoc_gen_swift_LDFLAGS = -lprotobuf -lprotoc
 protoc_gen_swift_SOURCES = 	\
 	main.cc					\
 	swift_enum_field.cc		\

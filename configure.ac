@@ -50,7 +50,8 @@ protobuf, try
 In some 64-bit environments, try LDFLAGS=-L/usr/local/lib64.
 ])])
 pbc_savelibs="$LIBS"
-LIBS="$LIBS -lprotoc -lprotobuf -lpthread"
+#LIBS="$LIBS -lprotoc -lprotobuf -lpthread"
+LIBS="$LIBS -lpthread"
 CFLAGS="$CFLAGS -DOBJC_ARC"
 AC_LINK_IFELSE(
   [AC_LANG_PROGRAM([[#include <google/protobuf/compiler/command_line_interface.h>]],
